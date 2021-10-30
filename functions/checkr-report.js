@@ -4,7 +4,7 @@ const checkrKey = process.env.CHECKR_KEY;
 const checkrKeyBase64 = Buffer.from(`${checkrKey}:`).toString('base64');
 
 async function getReport(reportId) {
-  const url = `https://api.privado.ai/v1/reports/${reportId}`;
+  const url = `https://api.checkr.com/v1/reports/${reportId}`;
   console.log('reportIdUrl', url);
 
   const response = await request({
